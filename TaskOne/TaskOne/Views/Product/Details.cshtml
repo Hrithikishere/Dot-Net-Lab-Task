@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<a href="/Category/Details" class="btn btn-info">Categories</a>
+<br />
+<a href="/Product/Create" class="btn btn-info">Add Product</a> 
+<table class="table table-bordered">
+
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category Id</th>
+    </tr>
+
+    @foreach (var data in Model)
+    {
+
+        <tr>
+            <td>@data.Id</td>
+            <td>@data.Name</td>
+            <td>@data.Price</td>
+            <td>@data.CategoryId</td>
+            <td><a href="/Product/Update/@data.Id" class="btn btn-primary">Edit</a></td>
+            <td><a href="/Product/Delete/@data.Id" class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+
+
+    
+</table> 
+
+
