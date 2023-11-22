@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "OrderDetails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>OrderDetails</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Order Id</th>
+        <th>Customer Name</th>
+    </tr>
+
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.User.Name</td>
+    </tr>
+
+</table>
+
+<table class="table table-bordered">
+
+    @foreach (var data in Model.ProductOrder)
+    {
+        <tr>
+            <td>@data.Id</td>
+        </tr>
+    }
+</table>

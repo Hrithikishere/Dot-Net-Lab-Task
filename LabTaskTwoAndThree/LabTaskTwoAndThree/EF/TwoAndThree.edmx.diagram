@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a96f4468f74f495c96c85b092563f51d" Name="Diagram1">
+        <EntityTypeShape EntityType="MidTaskModel.Category" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidTaskModel.OrderProduct" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidTaskModel.Order" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidTaskModel.ProductOrder" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidTaskModel.Product" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidTaskModel.User" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="MidTaskModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="MidTaskModel.FK_OrderProducts_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="MidTaskModel.FK_OrderProducts_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MidTaskModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MidTaskModel.FK_ProductOrders_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="MidTaskModel.FK_ProductOrders_Products" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

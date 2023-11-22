@@ -1,0 +1,27 @@
+﻿@model List<LabTaskTwoAndThree.EF.User>
+
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Customer</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Customer Id</th>
+        <th>Name</th>
+
+    </tr>
+
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>@data.Id</td>
+            <td>@data.Name</td>
+            <td><a href="/Admin/OrderDetails/@data.Id" class="btn btn-outline-info">Profile</a></td>
+        </tr>
+    }
+
+</table>

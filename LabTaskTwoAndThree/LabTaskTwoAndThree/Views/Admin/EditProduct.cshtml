@@ -1,0 +1,17 @@
+﻿@model LabTaskTwoAndThree.EF.Product
+
+@{
+    ViewBag.Title = "EditProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>EditProduct</h2>
+
+<form action="" method="post" class="form-control">
+
+    <input type="text" class="form-control" name="Name" value="@Model.Name" />
+    <input type="text" class="form-control" name="Price" value="@Model.Price" />
+    <input type="text" class="form-control" name="Quantity" value="@Model.Quantity"/>
+    <input type="text" class="form-control" name="CategoryId" value="@Model.CategoryId"/>
+    <input type="submit" value="Edit" />
+</form>
